@@ -1,0 +1,52 @@
+body {
+ margin: 0;
+ padding: 0;
+ font-family: monospace;
+ background: url('P_Fitbit/P_bg.jpg') ;
+ background-size: cover;
+}
+header{
+    position: static;
+}
+header img{
+    width: 33.3%;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 82px;
+  }
+ 
+  .foot_img_1{
+    width: 45%;
+    float: left;
+    padding-left: 5px;
+    margin: 15px 5px
+  }
+  .foot_img_2{
+    width: 45%;
+    margin: 20px 5px;
+    float: right;
+    padding-right: 5px;
+}
+.main_img{
+    /* width: 375px;
+    height: 533px; */
+    display: flex;
+    justify-content: space-between;
+}
+.main_img_1{
+    width: 33.3%;
+    height: 33.3%;
+}
+.main_img_2{
+    width: 33.3%;
+    height: 33.3%;
+}
+.main_img_3{
+    width: 33.3%;
+    height: 33.3%;
+}
