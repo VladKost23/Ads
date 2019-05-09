@@ -48,16 +48,24 @@ footer {
     justify-content: space-between;
 }
 .main_img_1{
-    width: 33.3%;
-    height: 33.3%;
+    width: 150%;
+    height: auto;
+    margin: 0px 0px 0px 30px;
+    position: relative;
+    z-index: 2;
 }
 .main_img_2{
-    width: 33.3%;
-    height: 33.3%;
+    width: 150%;
+    height: auto;
+    margin: 0px 0px 0px -10px;
+    position: relative;
+    z-index: 1;
+    
 }
 .main_img_3{
-    width: 33.3%;
-    height: 33.3%;
+    width: 150%;
+    height: auto;
+    margin: 0px 0px 0px -50px;
 }
 .slideDown{
     animation-name: slideDown;
@@ -77,10 +85,16 @@ footer {
         transform: translateY(-100%);
         opacity: 0.0; 
     }
+    10%{
+        opacity: 0.2;
+    }
+    30%{
+        opacity: 0.3;
+    }
     50%{
         opacity: 0.5;
     }
-    100%{
+    70%{
         opacity: 1;
     }
 }
@@ -89,8 +103,8 @@ footer {
     animation-name: fadeIn;
     -webkit-animation-name: fadeIn; 
  
-    animation-duration: 0.2s; 
-    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.6s; 
+    -webkit-animation-duration: 0.6s;
  
     animation-timing-function: ease-in-out; 
     -webkit-animation-timing-function: ease-in-out;     
@@ -105,10 +119,13 @@ footer {
     10%{
         opacity: 0.2;
     }
-    50%{
+    30%{
         opacity: 0.5;
     }
-    100%{
+    50%{
+        opacity: 0.7;
+    }
+    70%{
         opacity: 1;
     }
 }
@@ -130,10 +147,16 @@ footer {
         transform: translateY(100%);
         opacity: 0.0; 
     }
+    10%{
+        opacity: 0.2;
+    }
+    30%{
+        opacity: 0.3;
+    }
     50%{
         opacity: 0.5;
     }
-    100%{
+    70%{
         opacity: 1;
     }
 }
@@ -153,15 +176,15 @@ footer {
     0% {
         opacity: 0.0;       
     }
-    50%{
-        opacity: 0.0;
+    20%{
+        opacity: 0.0; 
     }
-    100%{
+    50%{
         opacity: 1;
     }
 }
 .price{
-    margin: 100px 120px;
+    margin: 0px 120px;
     width: 40%;
     animation-name: price;
     -webkit-animation-name: price; 
@@ -175,10 +198,10 @@ footer {
     0% {
         opacity: 0.0;       
     }
-    50%{
-        opacity: 0.0;
+    20%{
+        opacity: 0.0; 
     }
-    100%{
+    50%{
         opacity: 1;
     }
 }
@@ -197,10 +220,10 @@ footer {
     0% {
         opacity: 0.0;       
     }
-    50%{
-        opacity: 0.0;
+    20%{
+        opacity: 0.0; 
     }
-    100%{
+    50%{
         opacity: 1;
     }
 }
