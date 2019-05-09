@@ -13,3 +13,7 @@
 // };
 
 // var timer = setInterval(startTimer. delay)
+function invisible (){
+    let elem = document.getElementById('main');
+    
+}

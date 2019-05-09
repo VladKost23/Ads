@@ -1,4 +1,7 @@
-body {
+html ,body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
  margin: 0;
  padding: 0;
  font-family: monospace;
@@ -11,13 +14,19 @@ header{
 header img{
     width: 33.3%;
 }
+main{
+    /* height:100vh;
+    margin: 0 auto;
+    vertical-align: middle; */
+    /* margin-top: 100px; */
+}
 
 footer {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 82px;
+    /* height: 82px; */
   }
  
   .foot_img_1{
@@ -49,4 +58,149 @@ footer {
 .main_img_3{
     width: 33.3%;
     height: 33.3%;
+}
+.slideDown{
+    animation-name: slideDown;
+    -webkit-animation-name: slideDown;  
+ 
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+ 
+    animation-timing-function: ease;    
+    -webkit-animation-timing-function: ease;    
+ 
+    visibility: visible !important;                     
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0.0; 
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.fadeIn{
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn; 
+ 
+    animation-duration: 0.2s; 
+    -webkit-animation-duration: 0.2s;
+ 
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+ 
+    visibility: visible !important; 
+}
+ 
+@keyframes fadeIn {
+    0% {
+        opacity: 0.1;       
+    }
+    10%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.slideUp{
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;    
+ 
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+ 
+    animation-timing-function: ease;    
+    -webkit-animation-timing-function: ease;
+ 
+    visibility: visible !important;         
+}
+ 
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0.0; 
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.cuida{
+    margin: 40px 40px;
+    width: 80%;
+    animation-name: cuida;
+    -webkit-animation-name: cuida; 
+    animation-duration: 1.5s; 
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+    visibility: visible !important; 
+}
+@keyframes cuida {
+    0% {
+        opacity: 0.0;       
+    }
+    50%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.price{
+    margin: 100px 120px;
+    width: 40%;
+    animation-name: price;
+    -webkit-animation-name: price; 
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+    visibility: visible !important; 
+}
+@keyframes price {
+    0% {
+        opacity: 0.0;       
+    }
+    50%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.shadow{
+    margin: 0px 15px;
+    width: 90%;
+    animation-name: shadow;
+    -webkit-animation-name: shadow; 
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+    visibility: visible !important; 
+}
+@keyframes shadow {
+    0% {
+        opacity: 0.0;       
+    }
+    50%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
